@@ -1,9 +1,31 @@
-html,
-body {
-  padding: 0;
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFFFFF;
+  --ice: #F0F2F5;
+  --blue: #007AFF;
+  --green: #02FF74;
+  --purple: #6000FE;
+  --red: #E62E4D;
+  --text: #969CB3;
+  --title: #363F5F;
+}
+
+body {
+  background: var(--ice);
+  color: var(--text);
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
@@ -11,6 +33,14 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+@media (max-width: 1080px) {
+  html {
+      font-size: 93.75%;
+  }
+}
+
+@media (max-width: 780px) {
+  html {
+      font-size: 87.5%;
+  }
 }

@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -8,7 +10,7 @@
   --white: #FFFFFF;
   --ice: #F0F2F5;
   --blue: #007AFF;
-  --green: #02FF74;
+  --green: #04D361;
   --purple: #6000FE;
   --red: #E62E4D;
   --text: #969CB3;
@@ -33,14 +35,24 @@ a {
   text-decoration: none;
 }
 
+.wrapper { 
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 @media (max-width: 1080px) {
   html {
       font-size: 93.75%;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 768px) {
   html {
       font-size: 87.5%;
+  }
+
+  .wrapper { 
+    padding: 1rem;
   }
 }
